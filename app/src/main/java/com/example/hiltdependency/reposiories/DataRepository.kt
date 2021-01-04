@@ -10,6 +10,7 @@ import javax.inject.Inject
 class DataRepository @Inject constructor(private val apiService: ApiService) {
       fun getGenres():Observable<Genress> {
           Log.d("dddddd", "ssssss")
+          Log.d("mmmmmm","nnnnnnnnn")
           return apiService.getGenres(NetworkConstants.API_KEY, NetworkConstants.LANGUAGE)
       }
 }
